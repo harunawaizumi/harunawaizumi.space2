@@ -1,6 +1,15 @@
-/*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
-*/
+
+@import url(custom.css);
+
+.__className_20b187 {
+	font-family: __inter_20b187, __inter_Fallback_20b187
+}
+
+.__variable_20b187 {
+	--font-inter: "__inter_20b187", "__inter_Fallback_20b187"
+}
+
+
 *,
 :after,
 :before {
@@ -879,7 +888,7 @@ video {
 }
 
 .border-slate-200\/10 {
-	border-color: rgba(226, 232, 240, .1)
+	border-color: rgba(var(--text-slate-400), .1)
 }
 
 .border-slate-300\/10 {
@@ -887,7 +896,7 @@ video {
 }
 
 .border-teal-400\/0 {
-	border-color: rgba(45, 212, 191, 0)
+	border-color: rgba(var(--bg-teal-400), 0)
 }
 
 .border-transparent {
@@ -900,28 +909,28 @@ video {
 
 .bg-slate-600 {
 	--tw-bg-opacity: 1;
-	background-color: rgb(71 85 105/var(--tw-bg-opacity))
+	background-color: rgb(var(--bg-slate-600)/var(--tw-bg-opacity))
 }
 
 .bg-slate-900 {
 	--tw-bg-opacity: 1;
-	background-color: rgb(15 23 42/var(--tw-bg-opacity))
+	background-color: rgb(var(--bg-slate-900)/var(--tw-bg-opacity))
 }
 
 .bg-slate-900\/10 {
-	background-color: rgba(15, 23, 42, .1)
+	background-color: rgba(var(--bg-slate-900-comma), .1)
 }
 
 .bg-slate-900\/75 {
-	background-color: rgba(15, 23, 42, .75)
+	background-color: rgba(var(--bg-slate-900-comma), .75)
 }
 
 .bg-teal-400\/10 {
-	background-color: rgba(45, 212, 191, .1)
+	background-color: rgba(var(--bg-teal-400), .1)
 }
 
 .bg-zinc-900\/30 {
-	background-color: rgba(24, 24, 27, .3)
+	background-color: rgba(var(--bg-slate-900-comma), .3)
 }
 
 .bg-gradient-to-br {
@@ -929,8 +938,8 @@ video {
 }
 
 .from-teal-400 {
-	--tw-gradient-from: #2dd4bf var(--tw-gradient-from-position);
-	--tw-gradient-to: rgba(45, 212, 191, 0) var(--tw-gradient-to-position);
+	--tw-gradient-from: var(--bg-teal-400) var(--tw-gradient-from-position);
+	--tw-gradient-to: rgba(var(--bg-teal-400), 0) var(--tw-gradient-to-position);
 	--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
 }
 
@@ -1057,12 +1066,12 @@ video {
 }
 
 .text-4xl {
-	font-size: 2.25rem;
+	font-size: 2rem;
 	line-height: 2.5rem
 }
 
 .text-5xl {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	line-height: 1
 }
 
@@ -1077,7 +1086,7 @@ video {
 }
 
 .text-lg {
-	font-size: 1.125rem;
+	font-size: 0.8rem;
 	line-height: 1.75rem
 }
 
@@ -1097,15 +1106,15 @@ video {
 }
 
 .font-bold {
-	font-weight: 700
+	font-weight: 600
 }
 
 .font-medium {
-	font-weight: 500
+	font-weight: 400
 }
 
 .font-semibold {
-	font-weight: 600
+	font-weight: 500
 }
 
 .uppercase {
@@ -1158,7 +1167,7 @@ video {
 
 .text-slate-200 {
 	--tw-text-opacity: 1;
-	color: rgb(226 232 240/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 }
 
 .text-slate-300 {
@@ -1168,12 +1177,12 @@ video {
 
 .text-slate-400 {
 	--tw-text-opacity: 1;
-	color: rgb(148 163 184/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-400)/var(--tw-text-opacity))
 }
 
 .text-slate-500 {
 	--tw-text-opacity: 1;
-	color: rgb(100 116 139/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-500)/var(--tw-text-opacity))
 }
 
 .text-slate-700 {
@@ -1183,7 +1192,7 @@ video {
 
 .text-teal-300 {
 	--tw-text-opacity: 1;
-	color: rgb(94 234 212/var(--tw-text-opacity))
+	color: rgb(var(--teal-300)/var(--tw-text-opacity))
 }
 
 .text-white {
@@ -1319,12 +1328,12 @@ video {
 .active .nav-indicator {
 	width: 4rem;
 	--tw-bg-opacity: 1;
-	background-color: rgb(226 232 240/var(--tw-bg-opacity))
+	background-color: rgb(var(--text-slate-200)/var(--tw-bg-opacity))
 }
 
 .active .nav-text {
 	--tw-text-opacity: 1;
-	color: rgb(226 232 240/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 }
 
 @media (prefers-reduced-motion:no-preference) {
@@ -1460,42 +1469,42 @@ video {
 
 .selection\:bg-teal-300 ::-moz-selection {
 	--tw-bg-opacity: 1;
-	background-color: rgb(94 234 212/var(--tw-bg-opacity))
+	background-color: rgb(var(--teal-300)/var(--tw-bg-opacity))
 }
 
 .selection\:bg-teal-300 ::selection {
 	--tw-bg-opacity: 1;
-	background-color: rgb(94 234 212/var(--tw-bg-opacity))
+	background-color: rgb(var(--teal-300)/var(--tw-bg-opacity))
 }
 
 .selection\:text-teal-900 ::-moz-selection {
 	--tw-text-opacity: 1;
-	color: rgb(19 78 74/var(--tw-text-opacity))
+	color: rgb(var(--text-teal-900)/var(--tw-text-opacity))
 }
 
 .selection\:text-teal-900 ::selection {
 	--tw-text-opacity: 1;
-	color: rgb(19 78 74/var(--tw-text-opacity))
+	color: rgb(var(--text-teal-900)/var(--tw-text-opacity))
 }
 
 .selection\:bg-teal-300::-moz-selection {
 	--tw-bg-opacity: 1;
-	background-color: rgb(94 234 212/var(--tw-bg-opacity))
+	background-color: rgb(var(--teal-300)/var(--tw-bg-opacity))
 }
 
 .selection\:bg-teal-300::selection {
 	--tw-bg-opacity: 1;
-	background-color: rgb(94 234 212/var(--tw-bg-opacity))
+	background-color: rgb(var(--teal-300)/var(--tw-bg-opacity))
 }
 
 .selection\:text-teal-900::-moz-selection {
 	--tw-text-opacity: 1;
-	color: rgb(19 78 74/var(--tw-text-opacity))
+	color: rgb(var(--text-teal-900)/var(--tw-text-opacity))
 }
 
 .selection\:text-teal-900::selection {
 	--tw-text-opacity: 1;
-	color: rgb(19 78 74/var(--tw-text-opacity))
+	color: rgb(var(--text-teal-900)/var(--tw-text-opacity))
 }
 
 .last\:border-none:last-child {
@@ -1509,12 +1518,12 @@ video {
 
 .hover\:text-slate-200:hover {
 	--tw-text-opacity: 1;
-	color: rgb(226 232 240/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 }
 
 .hover\:text-teal-300:hover {
 	--tw-text-opacity: 1;
-	color: rgb(94 234 212/var(--tw-text-opacity))
+	color: rgb(var(--teal-300)/var(--tw-text-opacity))
 }
 
 .focus-visible\:translate-x-0:focus-visible {
@@ -1524,12 +1533,12 @@ video {
 
 .focus-visible\:text-slate-200:focus-visible {
 	--tw-text-opacity: 1;
-	color: rgb(226 232 240/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 }
 
 .focus-visible\:text-teal-300:focus-visible {
 	--tw-text-opacity: 1;
-	color: rgb(94 234 212/var(--tw-text-opacity))
+	color: rgb(var(--teal-300)/var(--tw-text-opacity))
 }
 
 .group:hover .group-hover\:w-16 {
@@ -1568,17 +1577,17 @@ video {
 }
 
 .group:hover .group-hover\:border-slate-200\/30 {
-	border-color: rgba(226, 232, 240, .3)
+	border-color: rgba(var(--text-slate-400), .3)
 }
 
 .group:hover .group-hover\:border-teal-300 {
 	--tw-border-opacity: 1;
-	border-color: rgb(94 234 212/var(--tw-border-opacity))
+	border-color: rgb(var(--teal-300)/var(--tw-border-opacity))
 }
 
 .group:hover .group-hover\:bg-slate-200 {
 	--tw-bg-opacity: 1;
-	background-color: rgb(226 232 240/var(--tw-bg-opacity))
+	background-color: rgb(var(--text-slate-200)/var(--tw-bg-opacity))
 }
 
 .group\/korok:hover .group-hover\/korok\:text-blue-400 {
@@ -1638,7 +1647,7 @@ video {
 
 .group:hover .group-hover\:text-slate-200 {
 	--tw-text-opacity: 1;
-	color: rgb(226 232 240/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -1671,12 +1680,12 @@ video {
 
 .group:focus-visible .group-focus-visible\:bg-slate-200 {
 	--tw-bg-opacity: 1;
-	background-color: rgb(226 232 240/var(--tw-bg-opacity))
+	background-color: rgb(var(--text-slate-200)/var(--tw-bg-opacity))
 }
 
 .group:focus-visible .group-focus-visible\:text-slate-200 {
 	--tw-text-opacity: 1;
-	color: rgb(226 232 240/var(--tw-text-opacity))
+	color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 }
 
 .group:focus-visible .group-focus-visible\:opacity-100 {
@@ -1749,12 +1758,12 @@ video {
 	}
 
 	.sm\:text-5xl {
-		font-size: 3rem;
+		font-size: 2.2rem;
 		line-height: 1
 	}
 
 	.sm\:text-xl {
-		font-size: 1.25rem;
+		font-size: 1.1rem;
 		line-height: 1.75rem
 	}
 }
@@ -1928,7 +1937,7 @@ video {
 
 	.lg\:text-slate-200 {
 		--tw-text-opacity: 1;
-		color: rgb(226 232 240/var(--tw-text-opacity))
+		color: rgb(var(--text-slate-200)/var(--tw-text-opacity))
 	}
 
 	.lg\:opacity-0 {
@@ -1940,7 +1949,7 @@ video {
 	}
 
 	.group:hover .lg\:group-hover\:bg-slate-800\/50 {
-		background-color: rgba(30, 41, 59, .5)
+		background-color: rgba(var(--text-teal-900), .5)
 	}
 
 	.group\/list:hover .lg\:group-hover\/list\:opacity-50 {
@@ -2036,12 +2045,4 @@ video {
 	descent-override: 22.43%;
 	line-gap-override: 0.00%;
 	size-adjust: 107.64%
-}
-
-.__className_20b187 {
-	font-family: __inter_20b187, __inter_Fallback_20b187
-}
-
-.__variable_20b187 {
-	--font-inter: "__inter_20b187", "__inter_Fallback_20b187"
 }
